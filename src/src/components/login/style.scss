@@ -1,0 +1,23 @@
+  
+  @import "../../theme/color.scss";
+
+  .login{
+    .container #login-row #login-column #login-box {
+      margin-top: 120px;
+      max-width: 600px;
+      height: 320px;
+      border: 1px solid white;
+      background-color: $primaryblue;
+    }
+    .container #login-row #login-column #login-box #login-form {
+      padding: 20px;
+    }
+    .container #login-row #login-column #login-box #login-form #register-link {
+      margin-top: -85px;
+    }
+    .textinfo{
+      margin: 10px 0px;
+     color: white;
+    }
+  }
+  

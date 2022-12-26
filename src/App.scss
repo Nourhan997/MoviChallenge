@@ -1,0 +1,9 @@
+@import "./src/theme/color.scss";
+
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: $primaryblue;
+}

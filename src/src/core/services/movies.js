@@ -1,10 +1,11 @@
 //UTILITIES
 import { api } from "./main";
 const REACT_APP_API_KEY = "2fed02e2a1ee478ce68a29873e724b99";
+
 //toprated
-export const retrieveAllMovie = () => {
+export const retrieveAllMovie = (page) => {
   return api
-    .get(`movie/top_rated/?api_key=${REACT_APP_API_KEY}&page=1`)
+    .get(`movie/top_rated/?api_key=${REACT_APP_API_KEY}&page=${page}`)
     .then((response) => {
       return response;
     })
@@ -13,9 +14,9 @@ export const retrieveAllMovie = () => {
     });
 };
 
-export const retrieveUpCommingMovie = () => {
+export const retrieveUpCommingMovie = (page) => {
   return api
-    .get(`movie/upcoming/?api_key=${REACT_APP_API_KEY}&page=1`)
+    .get(`movie/upcoming/?api_key=${REACT_APP_API_KEY}&page=${page}`)
     .then((response) => {
       return response;
     })

@@ -61,7 +61,7 @@ export const GetMovieDetails = (movie_id) => async (dispatch) => {
 
 export const FilterByGener = (id) => async (dispatch) => {
   try {
-    const res = await retrievMoviesBycategories(2);
+    const res = await retrievMoviesBycategories(id);
     dispatch({
       type: FILTERBYGENRE,
       payload: res.data,

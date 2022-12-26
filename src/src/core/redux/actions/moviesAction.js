@@ -31,7 +31,7 @@ export const GetallMovies = () => async (dispatch) => {
 
 export const GetUpCommingMovies = () => async (dispatch) => {
   try {
-    const res = await retrieveUpCommingMovie();
+    const res = await retrieveUpCommingMovie(1);
     dispatch({
       type: GET_UPMOVIES,
       payload: res.data.results,

@@ -2,7 +2,7 @@
 import { api } from "./main";
 const REACT_APP_API_KEY = "2fed02e2a1ee478ce68a29873e724b99";
 //toprated
-export const retrieveAllMovie = (1) => {
+export const retrieveAllMovie = () => {
   return api
     .get(`movie/top_rated/?api_key=${REACT_APP_API_KEY}&page=1`)
     .then((response) => {
@@ -13,7 +13,7 @@ export const retrieveAllMovie = (1) => {
     });
 };
 
-export const retrieveUpCommingMovie = (1) => {
+export const retrieveUpCommingMovie = () => {
   return api
     .get(`movie/upcoming/?api_key=${REACT_APP_API_KEY}&page=1`)
     .then((response) => {

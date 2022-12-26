@@ -1,7 +1,7 @@
 //UTILITIES
 import { api } from "./main";
 const REACT_APP_API_KEY = "2fed02e2a1ee478ce68a29873e724b99";
-
+let page = "1
 //toprated
 export const retrieveAllMovie = (page) => {
   return api

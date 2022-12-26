@@ -62,9 +62,11 @@ function Dashboard() {
   }, [dataSet, initialData, randomData]);
 
   return (
-    <div className="container" style={{ backgroundColor: "#fff" }}>
+    <div
+      className="container"
+      style={{ backgroundColor: "#fff", minHeight: "600px" }}
+    >
       <div className="row">
-        <div  className="col-6"></div>
         <div className="col-6">
           <h5>Top Movies</h5>
           <svg width={svgWidth} height={svgHeight} ref={svgRef}>
@@ -72,6 +74,7 @@ function Dashboard() {
             <g className="y-axis" />
           </svg>
         </div>
+        <div className="col-6"></div>
       </div>
     </div>
   );

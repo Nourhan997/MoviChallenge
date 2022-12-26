@@ -5,7 +5,7 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 const Customcards = (props) => {
   const { data, title, number, viewmore, firstno } = props;
   let navigate = useNavigate();
-
+ 
   return (
     <div className="movies">
       <div className="topsection my-2">

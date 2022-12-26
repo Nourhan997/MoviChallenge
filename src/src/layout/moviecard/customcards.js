@@ -13,7 +13,7 @@ const Customcards = (props) => {
         <Link className="viewmore">{viewmore || " "}</Link>
       </div>
       <div className="movies-inner">
-        {data?.slice(firstno || 0, number || data.length).map((movie) => (
+        {data?.slice(firstno || 0, number || data.length)?.map((movie) => (
           <div className="movie" key={movie.id}>
             <div
               className={`movie-rating ${
